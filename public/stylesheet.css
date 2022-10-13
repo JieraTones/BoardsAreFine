@@ -1,27 +1,49 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #FF8F45;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+  font-family: 'BebasNeueRegular';
   float: left;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #FF8F45;
   color: black;
 }
 
-/* Add a color to the active/current link */
+/* Add a color to the active/current link
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #FF8F45;
   color: white;
+}
+*/
+
+.combo {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.logo {
+    float: left;
+    display: inline-block;
+    vertical-align: center;
+    width: 357px;
+    height: 78px;
+    margin-right: 20px;
 }

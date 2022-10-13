@@ -1,18 +1,39 @@
 <!doctype html>
 <html>	
 	<head> 
-		<link href="<%= url('/stylesheet.css') %>" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+
+	<body>
+		<title>Combo Board Generator</title>
+
 		<div class="topnav">
+    	  <img class="logo" src="https://u.realgeeks.media/tiera/logo.png" width="150" height="70">
 		  <a class="active" href="#home">Home</a>
 		  <a target="_blank" href="https://boards.realgeeks.com/">Boards List</a>
 		  <a target="_blank" href="https://mcp.realgeeks.com/admin/mcp/board/">MCP Boards</a>
 		  <a href="#about">Instructions</a>
 		</div>
 
-		<title>Combo Board Generator</title>
-	</head>
+		<h1> <center>Combo Board Generator</center></h1>
+		
+		<form>
+		
+		<div class="combo">
+    	
+    	<label for="site_name">Site Name:</label><br>
+		<input type="text" id="site_name" name="site_name" placeholder="www.tierasellshomes.com" value="<%= site_name %>"><br>	
+		
+		<label for="board_numbers">Board Numbers (Comma Separated):</label><br>
+		<input type="text" id="board_numbers" name="board_numbers" placeholder="45,399,405" value="<%= board_numbers %>"><br>	
+	
 
-	<body>
-		<h1> Combo Board Generator</h1>
+		<label for="destination_uid">Destination MCP Board UID:</label><br>
+		<input type="text" id="destination_uid" name="destination_uid" placeholder="1905" value="<%= destination_uid %>"><br>		
+
+		<input type="submit" id="combo_maker">
+		</div>
+	    </form>
 	</body>
+
 </html>
