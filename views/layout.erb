@@ -1,39 +1,62 @@
 <!doctype html>
 <html>	
 	<head> 
+<!--Load all external dependencies -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="stylesheet.css">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="functions.js"></script>
 	</head>
 
 	<body>
+<!--Controls what displays on the browser tab-->
 		<title>Combo Board Generator</title>
-
-		<div class="topnav">
+		<!--Navigation Bar-->
+		<div class="topnav" id="myTopnav">
     	  <img class="logo" src="https://u.realgeeks.media/tiera/logo.png" width="150" height="70">
 		  <a class="active" href="#home">Home</a>
 		  <a target="_blank" href="https://boards.realgeeks.com/">Boards List</a>
 		  <a target="_blank" href="https://mcp.realgeeks.com/admin/mcp/board/">MCP Boards</a>
-		  <a href="#about">Instructions</a>
+		  <a href="/about">Instructions</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	  <i class="fa fa-bars"></i>
+    	</a>
 		</div>
 
-		<h1> <center>Combo Board Generator</center></h1>
-		
+<!--Header-->
+		<h1> <center><font size="100"> Combo Board Generator</font></center></h1>
 		<form>
-		
-		<div class="combo">
-    	
-    	<label for="site_name">Site Name:</label><br>
+
+<!--Create Responsive Form-->
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-75">
+ 		<label for="site_name">Site Name:</label><br>
 		<input type="text" id="site_name" name="site_name" placeholder="www.tierasellshomes.com" value="<%= site_name %>"><br>	
-		
-		<label for="board_numbers">Board Numbers (Comma Separated):</label><br>
-		<input type="text" id="board_numbers" name="board_numbers" placeholder="45,399,405" value="<%= board_numbers %>"><br>	
-	
+      </div>
+     </div>
+      <div class="row">
+        <div class="col-75">
+		  <label for="board_numbers">Board Numbers (Comma Separated):</label><br>
+		  <input type="text" id="board_numbers" name="board_numbers" placeholder="45,399,405" value="1<%= board_numbers %>"><br>	
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-75">
+		  <label for="destination_uid">Destination MCP Board UID:</label><br>
+		  <input type="text" id="destination_uid" name="destination_uid" placeholder="1905" value="<%= destination_uid %>"><br>	
+      </div>
+     </div>
+    <div class="button">
+      <input type="submit" value="Submit" id="combo_maker">
+    </div>
+    </div>
+  </form>
 
-		<label for="destination_uid">Destination MCP Board UID:</label><br>
-		<input type="text" id="destination_uid" name="destination_uid" placeholder="1905" value="<%= destination_uid %>"><br>		
-
-		<input type="submit" id="combo_maker">
-		</div>
-	    </form>
 	</body>
 
 </html>
