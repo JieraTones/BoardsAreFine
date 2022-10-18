@@ -9,6 +9,7 @@ get '/' do
   erb :layout, :locals => {
     :site_name => params["site_name"],
     :board_numbers => params["board_numbers"],
+    :submit => params["submit"],
     :destination_uid  => params["destination_uid"]
    }
 end
