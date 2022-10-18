@@ -2,7 +2,7 @@ require 'webrick'
 require 'sinatra'
 
 get '/about' do
-  erb :about
+  erb :about, :layout => false
 end
 
 get '/' do
@@ -13,3 +13,6 @@ get '/' do
    }
 end
 
+# :layout => false, 
+# tells sinatra to ignore the layout file
+# layout is pulled in to all pages by default
