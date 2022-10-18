@@ -1,6 +1,7 @@
 <!doctype html>
 <html>	
 	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Load all external dependencies -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +15,12 @@
 	<body>
 <!--Controls what displays on the browser tab-->
 		<title>Combo Board Generator</title>
-		<!--Navigation Bar-->
+<!--Navigation Bar-->
+		<div class="about_page">
 		<div class="topnav" id="myTopnav">
     	  <img class="logo" src="https://u.realgeeks.media/tiera/logo.png" width="150" height="70">
 		  <a class="active" href="/">Home</a>
-		  <a target="_blank" href="https://boards.realgeeks.com/">Boards List</a>
+		  <a target="_blank" href="https://boards.realgeeks.com/">Boards.RealGeeks</a>
 		  <a target="_blank" href="https://mcp.realgeeks.com/admin/mcp/board/">MCP Boards</a>
 		  <a href="/about">Instructions</a>
 		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -28,9 +30,20 @@
 		<h1><center>Welcome To The Wonderful World Of Automatic Combo Board Creation!</center></h2><br>
 		<ol type="1">
 		  <li>Create the combo board in MCP</li>
-		  <p> You can create a board in MCP by going to the following <a href="https://mcp.realgeeks.com/admin/mcp/board/">LINK</a> and clicking on the add board button in the top right hand corner</p>
-		  <li>Create a Zendesk Ticket with the following information:</li>
-		  <li>Assign the ticket to the Boards Support queue in Zendesk</li>
+		  <p> You can create a board in MCP by going to the following <a href="https://mcp.realgeeks.com/admin/mcp/board/">LINK</a> and clicking on the add board button in the top right hand corner</p><br>
+		  <img class="image" src="https://u.realgeeks.media/tiera/AddBoard.png" alt="Add Board">
+		  <br><br><br><br><br>
+		  <li>Update the New MCP Board With The Required Values</li>
+		  <p> <b>The only two fields that you have to update are Board Name and Boards.</b><br><br>The Board Name field follows the naming convention of <i>Board#(comma separated board numbers) - Name of all of the boards included</i>. <br><br>For example: Board #(45, 161, 119) - NTREIS, HART, SABOR. If there are a bunch of boards, you can use a generic name such as "Large New Jersey Combo". The name does not matter too much, but board numbers do!<br><br>
+		  The Boards field is just a comma separated list of the board numbers in the combo enclosed in square brackets [ ].</p>
+		  <img class="image" src="https://u.realgeeks.media/tiera/BoardSettings.png" alt="Add Board">
+		  <br><br><br><br><br>
+		  <li>Go to (url for combo generator site, update later) and fill out the form:</li>
+		  <p> Insert image of combo board form once complete</p>
+		  <li>Notify the client using the "Combo Board" Macro in Zendesk</li>
+
 		</ol>
 	</body>
+		</div>
 </html>
+
