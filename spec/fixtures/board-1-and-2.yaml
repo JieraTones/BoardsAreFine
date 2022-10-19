@@ -1,0 +1,10 @@
+1:
+  con:
+    bottom:
+    - association_fee: Monthly Maint Fee
+    - schools:
+2:
+  con:
+    bottom:
+    - association_fee: Monthly Maintenance Fee
+    - schools:

@@ -1,0 +1,137 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mcp-api.realgeeks.com/api/v2/boards/1902/?fields=BOARD_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OmE5OHNkZnl1OXBhc3VpZmR1amFzZGZsYWhzZGY5OGFzMG9pZnVhc2RmbGtu
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Tue, 04 Oct 2022 00:46:50 GMT
+      server:
+      - nginx/1.14.2
+      content-length:
+      - '104'
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"BOARD_NAME": "Board (#45, 102) - AUTO COMBO BOARD GENERATOR TEST
+        - HOLD ON TO YOUR ASS", "ID": 1902}]'
+  recorded_at: Tue, 04 Oct 2022 00:46:50 GMT
+- request:
+    method: get
+    uri: https://mcp-api.realgeeks.com/api/v2/boards/1902/?fields=BOARD_NAME%2CRG_BOARDS%2CENABLE_CRAIGSLIST_TOOL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OmE5OHNkZnl1OXBhc3VpZmR1amFzZGZsYWhzZGY5OGFzMG9pZnVhc2RmbGtu
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Tue, 04 Oct 2022 00:54:18 GMT
+      server:
+      - nginx/1.14.2
+      content-length:
+      - '158'
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"BOARD_NAME": "Board (#45, 102) - AUTO COMBO BOARD GENERATOR TEST
+        - HOLD ON TO YOUR ASS", "RG_BOARDS": [2, 45], "ENABLE_CRAIGSLIST_TOOL": true,
+        "ID": 1902}]'
+  recorded_at: Tue, 04 Oct 2022 00:54:18 GMT
+- request:
+    method: get
+    uri: https://mcp-api.realgeeks.com/api/v2/boards/1902/?fields=ID%2CBOARD_NAME%2CRG_BOARDS%2CENABLE_CRAIGSLIST_TOOL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OmE5OHNkZnl1OXBhc3VpZmR1amFzZGZsYWhzZGY5OGFzMG9pZnVhc2RmbGtu
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Tue, 04 Oct 2022 00:55:06 GMT
+      server:
+      - nginx/1.14.2
+      content-length:
+      - '158'
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"BOARD_NAME": "Board (#45, 102) - AUTO COMBO BOARD GENERATOR TEST
+        - HOLD ON TO YOUR ASS", "RG_BOARDS": [2, 45], "ENABLE_CRAIGSLIST_TOOL": true,
+        "ID": 1902}]'
+  recorded_at: Tue, 04 Oct 2022 00:55:06 GMT
+- request:
+    method: get
+    uri: https://mcp-api.realgeeks.com/api/v2/boards/1902/?fields=BOARD_NAME%2CRG_BOARDS
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OmE5OHNkZnl1OXBhc3VpZmR1amFzZGZsYWhzZGY5OGFzMG9pZnVhc2RmbGtu
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Tue, 04 Oct 2022 01:11:41 GMT
+      server:
+      - nginx/1.14.2
+      content-length:
+      - '126'
+      connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"BOARD_NAME": "Board (#45, 102) - AUTO COMBO BOARD GENERATOR TEST
+        - HOLD ON TO YOUR ASS", "RG_BOARDS": [2, 45], "ID": 1902}]'
+  recorded_at: Tue, 04 Oct 2022 01:11:41 GMT
+recorded_with: VCR 6.1.0
