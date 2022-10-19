@@ -1,5 +1,6 @@
 require 'webrick'
 require 'sinatra'
+require_relative 'lib/board_games'
 
 get '/about' do
   erb :about, :layout => false
